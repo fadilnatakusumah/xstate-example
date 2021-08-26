@@ -1,0 +1,56 @@
+.App {
+  font-family: sans-serif;
+  text-align : center;
+}
+
+* {
+  position  : relative;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height : 100%;
+  width  : 100%;
+  margin : 0;
+  padding: 0;
+}
+
+body {
+  font-family       : sans-serif;
+  display           : grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+.example-buttons {
+  display        : flex;
+  justify-content: center;
+  gap            : 50px;
+}
+
+progress[value] {
+  width : 250px;
+  height: 30px;
+}
+
+[data-xstate] {
+  justify-self: stretch;
+  align-self  : stretch;
+  border      : none;
+  min-height  : 600px;
+}
+
+.Downloader {
+  max-width: 700px;
+  margin   : 0 auto;
+}
+
+.Downloader>div {
+  display: flex;
+  gap    : 10px;
+}
+
+div.cat-pics {
+  flex-wrap: wrap;
+}
